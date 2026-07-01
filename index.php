@@ -33,45 +33,52 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="productos.php">Herramientas</a></li>
-                        <li><a class="dropdown-item" href="#">Construcción</a></li>
-                        <li><a class="dropdown-item" href="#">Techos</a></li>
+                        <li><a class="dropdown-item" href="productos.php">Construcción</a></li>
+                        <li><a class="dropdown-item" href="productos.php">Techos</a></li>
                     </ul>
                     </li>
                 </ul>
 
-                <div class="ms-auto">
+                <div class="ms-lg-auto mt-3 mt-lg-0">
 
-                    <?php if (isset($_SESSION['usuario_id'])): ?>
+                <?php if (isset($_SESSION['usuario_id'])): ?>
 
-                        <div class="dropdown">
-                            <a class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
-                                <i class="fa-solid fa-circle-user me-2"></i>
-                                <?php echo $_SESSION['nombre']; ?>
-                            </a>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            
+                            <i class="fa-solid fa-circle-user me-2"></i>
+                            <?php echo $_SESSION['nombre']; ?>
 
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <a class="dropdown-item" href="profile.php">
-                                        <i class="fa-solid fa-id-card me-2"></i> Perfil
-                                    </a>
-                                </li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li>
-                                    <a class="dropdown-item text-danger" href="php/logout.php">
-                                        <i class="fa-solid fa-right-from-bracket me-2"></i> Cerrar sesión
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        </a>
 
-                    <?php else: ?>
+                        <ul class="dropdown-menu dropdown-menu-end">
 
-                        <a class="btn btn-outline-primary me-2" href="login.html">Login</a>
-                        <a class="btn btn-primary" href="registro.html">Registrarse</a>
+                            <li>
+                                <a class="dropdown-item" href="profile.php">
+                                    <i class="fa-solid fa-id-card me-2"></i> Perfil
+                                </a>
+                            </li>
 
-                    <?php endif; ?>
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li>
+                                <a class="dropdown-item text-danger" href="php/logout.php">
+                                    <i class="fa-solid fa-right-from-bracket me-2"></i> Cerrar sesión
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                <?php else: ?>
+
+                    <a class="btn btn-outline-primary me-2" href="login.html">Login</a>
+                    <a class="btn btn-primary" href="registro.html">Registrarse</a>
+
+                <?php endif; ?>
 
                 </div>
+
 
 
                 <!-- <div class="ms-auto">
@@ -82,7 +89,8 @@
         </div>
     </nav>
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="container-fluid p-0">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -91,28 +99,28 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/ferre1.jpg" class="d-block w-100" alt="...">
+                <img src="img/ferre1.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/ferre2.jpg" class="d-block w-100" alt="...">
+                <img src="img/ferre2.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/dontono.jpg" class="d-block w-100" alt="...">
+                <img src="img/dontono.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/ferre3.jpg" class="d-block w-100" alt="...">
+                <img src="img/ferre3.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -128,50 +136,44 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mx-5 my-0"> 
-        <div class="col-10 col-sm-8 col-lg-6"> 
-            <img src="img/herramientas.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
-        </div> 
-        <div class="col-lg-6"> 
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1> 
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p> 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> 
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> 
-            </div> 
-        </div> 
     </div>
 
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 mx-5"> 
-        <div class="feature col"> 
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3" style="width:3rem; height: 3rem;" > 
-                <i class="fa-solid fa-hammer icono"></i>
+    
+
+    <div class="container py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5"> 
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+                <img src="img/herramientas.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
             </div> 
-            <h3 class="fs-2 text-body-emphasis">Featured title</h3> 
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
-            <a href="#" class="icon-link">Call to action
-                <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#chevron-right"></use>
-                </svg> 
-            </a>
-        </div> 
-        <div class="feature col"> 
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 p-2 rounded"> 
-                <i class="fa-solid fa-screwdriver-wrench icono"></i> 
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1> 
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p> 
+                <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> 
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> 
+                </div> 
             </div> 
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col text-center text-lg-start">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient rounded p-3 fs-2 mb-3">
+                    <i class="fa-solid fa-hammer icono"></i>
+                </div> 
                 <h3 class="fs-2 text-body-emphasis">Featured title</h3> 
                 <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
                 <a href="#" class="icon-link">Call to action
                     <svg class="bi" aria-hidden="true">
                         <use xlink:href="#chevron-right"></use>
                     </svg> 
-                </a> 
-        </div> 
-        <div class="feature col"> 
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"> 
-                    <i class="fa-solid fa-gear icono"></i>
-                    </div> 
+                </a>
+            </div> 
+            <div class="col text-center text-lg-start">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient rounded p-3 fs-2 mb-3">
+                    <i class="fa-solid fa-screwdriver-wrench icono"></i> 
+                </div> 
                     <h3 class="fs-2 text-body-emphasis">Featured title</h3> 
                     <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
                     <a href="#" class="icon-link">Call to action
@@ -179,9 +181,21 @@
                             <use xlink:href="#chevron-right"></use>
                         </svg> 
                     </a> 
-        </div> 
+            </div> 
+            <div class="col text-center text-lg-start">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient rounded p-3 fs-2 mb-3">
+                        <i class="fa-solid fa-gear icono"></i>
+                        </div> 
+                        <h3 class="fs-2 text-body-emphasis">Featured title</h3> 
+                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
+                        <a href="#" class="icon-link">Call to action
+                            <svg class="bi" aria-hidden="true">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg> 
+                        </a> 
+            </div> 
+        </div>
     </div>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     

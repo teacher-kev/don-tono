@@ -28,8 +28,12 @@ $resultado = $conn->query($sql);
             <?php while($producto = $resultado->fetch_assoc()): ?>
 
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/productos/<?php echo $producto['imagen']; ?>" class="card-img-top h-100" alt="">
+                <div class="card shadow-sm">
+                    <img
+                        src="img/productos/<?php echo $producto['imagen']; ?>"
+                        class="img-fluid w-50 mx-auto d-block mt-3"
+                        alt=""
+                    >
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $producto['nombre']; ?></h5>
                         <p class="card-text">
