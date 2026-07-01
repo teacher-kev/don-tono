@@ -102,29 +102,29 @@
             <div class="carousel-item active">
                 <img src="img/ferre1.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Todo para tus proyectos</h5>
+                    <p>Encuentra herramientas y materiales de calidad para construir, reparar y mejorar tu hogar.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/ferre2.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Las mejores herramientas</h5>
+                    <p>Contamos con una amplia variedad de herramientas para profesionales y aficionados.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/dontono.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Ferretería Don Toño</h5>
+                    <p>Más que una ferretería, somos tu aliado para cada proyecto de construcción y mantenimiento.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/ferre3.jpg" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Atención que genera confianza</h5>
+                    <p>Te asesoramos para que encuentres los productos adecuados y completes tus proyectos con éxito.</p>
                 </div>
             </div>
         </div>
@@ -139,19 +139,21 @@
     </div>
     </div>
 
-    
-
     <div class="container py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5"> 
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
                 <img src="img/herramientas.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
             </div> 
             <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1> 
-                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p> 
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                    Todo lo que necesitas para construir, reparar y mejorar tu hogar
+                </h1> 
+                <p class="lead">
+                    En Ferretería Don Toño encontrarás herramientas, materiales de construcción, artículos para techos electricidad, plomería y mucho más. Ofrecemos productos de calidad y atención personalizada para profesionales y proyectos del hogar.
+                </p> 
                 <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> 
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> 
+                    <a class="btn btn-primary btn-lg px-4 me-md-2" href="login.html">Iniciar Sesión</a> 
+                    <a class="btn btn-outline-secondary btn-lg px-4" href="registro.html">Registráte</a>
                 </div> 
             </div> 
         </div>
@@ -163,9 +165,11 @@
                 <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient rounded p-3 fs-2 mb-3">
                     <i class="fa-solid fa-hammer icono"></i>
                 </div> 
-                <h3 class="fs-2 text-body-emphasis">Featured title</h3> 
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
-                <a href="#" class="icon-link">Call to action
+                <h3 class="fs-2 text-body-emphasis">Herramientas de Calidad</h3> 
+                <p>
+                    Contamos con martillos, taladros, llaves, destornilladores y herramientas profesionales para todo tipo de trabajos de construcción y reparación.
+                </p> 
+                <a href="productos.php" class="icon-link">Ver Productos
                     <svg class="bi" aria-hidden="true">
                         <use xlink:href="#chevron-right"></use>
                     </svg> 
@@ -175,9 +179,11 @@
                 <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient rounded p-3 fs-2 mb-3">
                     <i class="fa-solid fa-screwdriver-wrench icono"></i> 
                 </div> 
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3> 
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
-                    <a href="#" class="icon-link">Call to action
+                    <h3 class="fs-2 text-body-emphasis">Materiales de Construcción</h3> 
+                    <p>
+                        Encuentra cemento, arena, bloques, láminas y materiales esenciales para desarrollar proyectos de construcción con la mejor calidad.
+                    </p> 
+                    <a href="#" class="icon-link">Ver Productos
                         <svg class="bi" aria-hidden="true">
                             <use xlink:href="#chevron-right"></use>
                         </svg> 
@@ -187,9 +193,11 @@
                     <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient rounded p-3 fs-2 mb-3">
                         <i class="fa-solid fa-gear icono"></i>
                         </div> 
-                        <h3 class="fs-2 text-body-emphasis">Featured title</h3> 
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
-                        <a href="#" class="icon-link">Call to action
+                        <h3 class="fs-2 text-body-emphasis">Asesoría Personalizada</h3> 
+                        <p>
+                            Nuestro equipo está listo para ayudarte a elegir los productos adecuados para tu proyecto, brindándote atención cercana y recomendaciones confiables.
+                        </p> 
+                        <a href="login.html" class="icon-link">Ver Servicios
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
                             </svg> 
